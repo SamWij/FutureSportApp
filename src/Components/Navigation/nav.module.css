@@ -1,0 +1,23 @@
+.navContainer {
+  background-color: #051d40;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3em;
+}
+
+.navLinkContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 3em;
+  padding: 2em;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #b1d4e0;
+}
+
+.logo {
+  padding-left: 1em;
+}
