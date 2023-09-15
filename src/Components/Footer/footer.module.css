@@ -1,0 +1,41 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #051d40;
+  color: #b1d4e0;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.socials {
+  margin-bottom: 10px;
+}
+
+.socialLinks {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.socialLinks li {
+  margin-right: 10px;
+}
+
+.fa {
+  width: 30px;
+  height: 30px;
+}
+
+.tc {
+  margin-bottom: 10px;
+}
+
+.tc a {
+  text-decoration: none;
+  color: #b1d4e0;
+}

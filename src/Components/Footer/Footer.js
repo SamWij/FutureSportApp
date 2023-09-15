@@ -1,9 +1,34 @@
 import React from 'react';
+import instagram from '../../Assets/squareInstagram.svg'
+import facebook from '../../Assets/squareFacebook.svg'
+import footerStyles from './footer.module.css'
 
 const Footer = () => {
+
+  const copyRight = {
+    title: 'FutureSport | Football is Life 2023',
+  };
+
+  const socials = {
+    instagramIcon: instagram,
+    facebookIcon: facebook
+  }
+
+
   return (
-    <footer className="footer">
-      {/* Footer content */}
+    <footer className={footerStyles.footer}>
+      <div class={footerStyles.socials}>
+        <ul class={footerStyles.socialLinks}>
+          <li>  <a href="/"><img src={socials.instagramIcon} class={footerStyles.fa} /> </a></li>
+          <li>  <a href="/"><img src={socials.facebookIcon} class={footerStyles.fa} /> </a></li>
+        </ul>
+      </div>
+      <div class={footerStyles.tc} >
+        <a href="#">Terms and Conditions</a>
+      </div>
+      <div>
+        <p> &copy; {copyRight.title} </p>
+      </div>
     </footer>
   );
 };
