@@ -1,16 +1,16 @@
 import React from 'react';
 
-const MainSection = () => {
+const Main = () => {
   return (
     <main className="main">
-      <div className="section">
-        {/* Content for the first section */}
-      </div>
-      <div className="section">
-        {/* Content for the second section */}
-      </div>
+      <section>
+        <h1>Section 1</h1>
+      </section>
+      <section>
+        <h1>Section 2</h1>
+      </section>
     </main>
   );
 };
 
-export default MainSection;
+export default Main;
