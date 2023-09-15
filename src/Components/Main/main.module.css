@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  /* Use flexbox */
+  justify-content: space-between;
+  /* Spread sections horizontally */
+}
+
+section {
+  flex: 1;
+  /* Equal width for both sections */
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 10px;
+}
+
+.content {
+  font-weight: 300;
+  font-size: larger;
+}

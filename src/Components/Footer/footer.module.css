@@ -6,7 +6,7 @@
   background-color: #051d40;
   color: #b1d4e0;
   padding: 20px;
-  position: fixed;
+  position: static;
   bottom: 0;
   left: 0;
   width: 100%;
