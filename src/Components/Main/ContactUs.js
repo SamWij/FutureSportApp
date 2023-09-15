@@ -58,7 +58,7 @@ function Contact() {
         />
 
         <label>Subject</label>
-        <select name="subject" className="field-select" ref={subjectRef}>
+        <select name="subject" className={contactStyles.subject} ref={subjectRef}>
           <option value="registration">Registration</option>
           <option value="sponsorship">Sponsorship</option>
           <option value="payment">Payment</option>

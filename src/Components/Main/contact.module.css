@@ -49,10 +49,18 @@
   right: 190px;
 }
 
-.email {
-  width: 50%;
+.subject {
+  width: 60%;
+  padding: 15px;
   margin: 0 0 20px 35px;
-  height: 40px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.email {
+  width: 80%;
+  margin: 0 0 20px 35px;
   padding: 15px;
   font-style: italic;
   border: 3px solid #ccc;
