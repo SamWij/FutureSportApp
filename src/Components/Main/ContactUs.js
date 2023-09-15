@@ -19,6 +19,12 @@ function Contact() {
     }
     alert("message info: \n" + JSON.stringify(data) + "the data 😎")
 
+    // Clear the form fields
+    firstNameRef.current.value = "";
+    lastNameRef.current.value = "";
+    emailRef.current.value = "";
+    subjectRef.current.value = "registration";
+    messageRef.current.value = "";
   }
 
   return (
