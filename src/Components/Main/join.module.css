@@ -1,0 +1,89 @@
+.send {
+  width: 100px;
+  margin: 30px 35px;
+  height: 40px;
+  border: none;
+  background: #051d40;
+  color: #FFD6BA;
+  cursor: pointer;
+}
+
+.email {
+  width: 80%;
+  margin: 0 0 20px 35px;
+  padding: 15px;
+  font-style: italic;
+  border: 3px solid #ccc;
+  background: transparent;
+  color: #434753;
+}
+
+.name {
+  margin: 25px auto;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  width: 90%;
+  height: 40px;
+}
+
+.name input[type="text"] {
+  width: 40%;
+  margin: 0 20px 0 0;
+  padding: 15px;
+  font-style: italic;
+  border: 3px solid #ccc;
+  background: transparent;
+  color: #434753;
+}
+
+.name label[for="firstName"] {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+.name label[for="lastName"] {
+  position: absolute;
+  top: -30px;
+  right: 190px;
+}
+
+.list {
+  width: 60%;
+  padding: 15px;
+  margin: 0 0 20px 35px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.suburb {
+  width: 80%;
+  margin: 0 0 20px 35px;
+  padding: 15px;
+  font-style: italic;
+  border: 3px solid #ccc;
+  background: transparent;
+  color: #434753;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+/* australian league iframe positioning */
+iframe {
+  height: 100%;
+  width: 100%;
+}
