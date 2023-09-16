@@ -1,4 +1,5 @@
 import React from "react";
+import trainingStyles from './training.module.css';
 import trainingData from '../../Data/training.json';
 
 console.log(trainingData);
@@ -7,7 +8,7 @@ const Training = () => {
   return (
     <div>
       <h1>Training</h1>
-      <table>
+      <table className={trainingStyles.training}>
         <thead>
           <tr>
             <th>Day</th>

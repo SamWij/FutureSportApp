@@ -1,0 +1,17 @@
+.training td {
+  width: 10%;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid #b1d4e0;
+}
+
+.training {
+  margin: 50px
+}
+
+th {
+  padding: 20px;
+  font-weight: bolder;
+  font-size: large;
+  background-color: #b1d4e0;
+}

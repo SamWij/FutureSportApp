@@ -1,0 +1,24 @@
+.fixture td {
+  padding: 20px;
+  width: 10%;
+  border-bottom: 1px solid #b1d4e0;
+  text-align: center;
+}
+
+.fixture {
+  margin: 50px
+}
+
+th {
+  text-align: center;
+  padding: 20px;
+  font-weight: bolder;
+  font-size: large;
+  background-color: #b1d4e0;
+}
+
+.round {
+  color: #051d40;
+  font-size: 19px;
+  font-weight: bolder;
+}

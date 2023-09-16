@@ -1,5 +1,6 @@
 
 import React from "react";
+import fixtureStyles from './fixture.module.css';
 import fixtureData from '../../Data/fixture.json';
 
 console.log(fixtureData);
@@ -8,7 +9,7 @@ const Fixture = () => {
   return (
     <div>
       <h1>Fixture List</h1>
-      <table>
+      <table className={fixtureStyles.fixture}>
         <thead>
           <tr>
             <th>Round</th>
@@ -20,8 +21,8 @@ const Fixture = () => {
         <tbody>
           {fixtureData.fixture.map((fixture, index) => (
             <tr key={index}>
-              <td>{fixture.round}</td>
-              <td>{fixture.title}</td>
+              <td className={fixtureStyles.round}>{fixture.round}</td>
+              <td className={fixtureStyles.title}>{fixture.title}</td>
               <td>{fixture.location}</td>
               <td>{fixture.date}</td>
             </tr>
