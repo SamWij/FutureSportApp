@@ -1,0 +1,24 @@
+{
+  "fees": [
+    {
+      "type": "Membership",
+      "cost": "$200",
+      "frequency": "annual"
+    },
+    {
+      "type": "Uniform Kit",
+      "cost": "$150",
+      "frequency": "per season"
+    },
+    {
+      "type": "Training Fees",
+      "cost": "$100",
+      "frequency": "per season"
+    },
+    {
+      "type": "Tournament Fee",
+      "cost": "$25",
+      "frequency": "per tournament"
+    }
+  ]
+}
