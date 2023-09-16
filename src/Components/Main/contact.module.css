@@ -74,3 +74,12 @@ label:not(#nameLabel) {
   color: #FFD6BA;
   cursor: pointer;
 }
+
+.map {
+  width: 90%;
+  height: 70%;
+}
+
+.contactLabel {
+  font-weight: bold;
+}

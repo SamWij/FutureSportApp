@@ -32,7 +32,7 @@ function Contact() {
     <section className={formStyles.container}>
       <div className={formStyles.leftColumn}>
         <h1>Contact us</h1>
-        <form onSubmit={handleSubmit} className={contactStyles.form}>
+        <form onSubmit={handleSubmit} className={formStyles.form}>
           <div className={contactStyles.name}>
             <label for="firstName" id="nameLabel">First Name</label>
             <input
@@ -88,17 +88,15 @@ function Contact() {
       </div>
       <div className={formStyles.rightColumn}>
         <h1>Contact Information</h1>
-        <p><span class="contact-label">Phone:</span> +61 3 1234 5678</p>
-        <p><span class="contact-label">Email:</span> contact@victoria.com.au</p>
-        <p><span class="contact-label">Postal Address:</span>
+        <p><span className={contactStyles.contactLabel}>Phone:</span> +61 3 1234 5678</p>
+        <p><span className={contactStyles.contactLabel}>Email:</span> contact@futuresport.com.au</p>
+        <p><span className={contactStyles.contactLabel}>Postal Address:</span>
           100 Victoria Street,
           East Melbourne VIC 3000,
           Australia</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2077333235216!2d144.97232821091632!3d-37.80860297186001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642c51e162e25%3A0x8783fa8be8a2816!2s100%20Victoria%20St%2C%20East%20Melbourne%20VIC%203002!5e0!3m2!1sen!2sau!4v1694826651184!5m2!1sen!2sau" ></iframe>
-
+        <iframe className={contactStyles.map} src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.2077333235216!2d144.97232821091632!3d-37.80860297186001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642c51e162e25%3A0x8783fa8be8a2816!2s100%20Victoria%20St%2C%20East%20Melbourne%20VIC%203002!5e0!3m2!1sen!2sau!4v1694826651184!5m2!1sen!2sau" ></iframe>
       </div>
-
-    </section>
+    </section >
   )
 }
 
