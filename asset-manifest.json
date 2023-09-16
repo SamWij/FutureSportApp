@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/github-pages-app/static/css/main.20c42f83.css",
+    "main.js": "/github-pages-app/static/js/main.244c3658.js",
+    "static/media/soccerCamp.png": "/github-pages-app/static/media/soccerCamp.b8b044951d36ce6a9b35.png",
+    "static/media/soccerImage4.png": "/github-pages-app/static/media/soccerImage4.cda7a849f3ce6965bb62.png",
+    "static/media/soccerImage1.png": "/github-pages-app/static/media/soccerImage1.94682953023a87c0d8a8.png",
+    "static/media/soccerImage2.png": "/github-pages-app/static/media/soccerImage2.fde65185d09824957e85.png",
+    "static/media/soccerImage3.png": "/github-pages-app/static/media/soccerImage3.772e523f9cc59860cc51.png",
+    "static/media/logo.svg": "/github-pages-app/static/media/logo.4dbbd1e07680bca8aa4829ecbd9951b1.svg",
+    "static/media/squareFacebook.svg": "/github-pages-app/static/media/squareFacebook.81fd292518097c0f5e3227568f6f4ed0.svg",
+    "static/media/squareInstagram.svg": "/github-pages-app/static/media/squareInstagram.06b1d47c67d4ce15913dbc464b2332c4.svg",
+    "index.html": "/github-pages-app/index.html",
+    "main.20c42f83.css.map": "/github-pages-app/static/css/main.20c42f83.css.map",
+    "main.244c3658.js.map": "/github-pages-app/static/js/main.244c3658.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.20c42f83.css",
+    "static/js/main.244c3658.js"
+  ]
+}
