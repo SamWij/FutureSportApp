@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/FutureSportApp/static/css/main.20c42f83.css",
-    "main.js": "/FutureSportApp/static/js/main.931b969a.js",
+    "main.js": "/FutureSportApp/static/js/main.a54c975b.js",
     "static/media/soccerCamp.png": "/FutureSportApp/static/media/soccerCamp.b8b044951d36ce6a9b35.png",
     "static/media/soccerImage4.png": "/FutureSportApp/static/media/soccerImage4.cda7a849f3ce6965bb62.png",
     "static/media/soccerImage1.png": "/FutureSportApp/static/media/soccerImage1.94682953023a87c0d8a8.png",
@@ -12,10 +12,10 @@
     "static/media/squareInstagram.svg": "/FutureSportApp/static/media/squareInstagram.06b1d47c67d4ce15913dbc464b2332c4.svg",
     "index.html": "/FutureSportApp/index.html",
     "main.20c42f83.css.map": "/FutureSportApp/static/css/main.20c42f83.css.map",
-    "main.931b969a.js.map": "/FutureSportApp/static/js/main.931b969a.js.map"
+    "main.a54c975b.js.map": "/FutureSportApp/static/js/main.a54c975b.js.map"
   },
   "entrypoints": [
     "static/css/main.20c42f83.css",
-    "static/js/main.931b969a.js"
+    "static/js/main.a54c975b.js"
   ]
 }
