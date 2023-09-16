@@ -106,7 +106,7 @@ function Join() {
         </form>
       </div>
       <div className={formStyles.rightColumn}>
-        <iframe src="https://footystats.org/api/club?id=5" ></iframe>
+        <iframe className={joinStyles.clubStats} src="https://footystats.org/api/club?id=5" ></iframe>
       </div>
     </section>
 
