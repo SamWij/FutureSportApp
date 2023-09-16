@@ -19,8 +19,8 @@ const Footer = () => {
     <footer className={footerStyles.footer}>
       <div className={footerStyles.socials}>
         <ul className={footerStyles.socialLinks}>
-          <li>  <a href="/"><img src={socials.instagramIcon} className={footerStyles.fa} /> </a></li>
-          <li>  <a href="/"><img src={socials.facebookIcon} className={footerStyles.fa} /> </a></li>
+          <li>  <a href="/"><img src={socials.instagramIcon} className={footerStyles.fa} alt="Instagram" /> </a></li>
+          <li>  <a href="/"><img src={socials.facebookIcon} className={footerStyles.fa} alt="Facebook" /> </a></li>
         </ul>
       </div>
       <div className={footerStyles.tc} >

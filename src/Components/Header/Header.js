@@ -13,7 +13,7 @@ const Header = () => {
           </div>
         </div>
         <div className={headerStyles.column} id="video">
-          <iframe src="https://www.youtube.com/embed/3zkumKSIEhA" title="Sam Kerr Backflip"></iframe>
+          <iframe src="https://www.youtube.com/embed/3zkumKSIEhA" title="Sam Kerr Backflip" alt="video-frame"></iframe>
         </div>
       </div>
     </header>
