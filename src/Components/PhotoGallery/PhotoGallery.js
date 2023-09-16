@@ -30,15 +30,15 @@ function PhotoGallery() {
       text: "soccer player 4"
     }
   ];
+
   return (
     <div className={galleryStyles.column} >
-
       <Carousel className={galleryStyles.slides} autoPlay infiniteLoop centerMode showThumbs={false} interval={2000}>
         {images.map((image) => (
-          <img src={image.pic} alt={image.text} className={galleryStyles.slideImage} />
+          <img key={image.id} src={image.pic} alt={image.text} className={galleryStyles.slideImage} />
         ))}
       </Carousel>
-    </div >
+    </div>
   );
 }
 
