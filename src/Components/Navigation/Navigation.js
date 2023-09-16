@@ -9,7 +9,9 @@ const NavigationBar = () => {
   return (
     <div className={navStyles.navContainer}>
       <div>
-        <a className={navStyles.logo} href="/"><img src={Logo} /> </a>
+        <Link to="/">
+          <img className={navStyles.logo} src={Logo} alt="Logo" />
+        </Link>
       </div>
       <nav className={navStyles.navLinkContainer}>
         <Link className={navStyles.navLink} to="/AboutUs"> About </Link>
