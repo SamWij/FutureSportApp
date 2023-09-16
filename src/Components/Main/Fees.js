@@ -1,16 +1,18 @@
 
 import React from "react";
+import trainingData from '../../Data/fees.json';
+import feesStyles from './fees.module.css'
 
 const Fees = () => (
-  <div>
-    <h1 className="title is-1">Club Fees</h1>
-    <p>
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-      inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus
-      et ultrices posuere cubilia curae; Duis consequat nulla ac ex consequat,
-      in efficitur arcu congue. Nam fermentum commodo egestas.
-    </p>
-  </div>
+  <section className={feesStyles.container}>
+    <div className={feesStyles.leftColumn}>
+    </div>
+    <div className={feesStyles.rightColumn}>
+      <iframe src="https://www.youtube.com/embed/3zkumKSIEhA" title="Sam Kerr Backflip"></iframe>
+    </div>
+
+
+  </section>
 );
 
 export default Fees;
