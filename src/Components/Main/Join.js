@@ -1,6 +1,5 @@
 
 import React, { useRef } from 'react'
-import Iframe from 'react-iframe'
 import joinStyles from './join.module.css'
 import formStyles from './form.module.css'
 

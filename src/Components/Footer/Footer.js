@@ -17,13 +17,13 @@ const Footer = () => {
 
   return (
     <footer className={footerStyles.footer}>
-      <div class={footerStyles.socials}>
-        <ul class={footerStyles.socialLinks}>
-          <li>  <a href="/"><img src={socials.instagramIcon} class={footerStyles.fa} /> </a></li>
-          <li>  <a href="/"><img src={socials.facebookIcon} class={footerStyles.fa} /> </a></li>
+      <div className={footerStyles.socials}>
+        <ul className={footerStyles.socialLinks}>
+          <li>  <a href="/"><img src={socials.instagramIcon} className={footerStyles.fa} /> </a></li>
+          <li>  <a href="/"><img src={socials.facebookIcon} className={footerStyles.fa} /> </a></li>
         </ul>
       </div>
-      <div class={footerStyles.tc} >
+      <div className={footerStyles.tc} >
         <a href="#">Terms and Conditions</a>
       </div>
       <div>
