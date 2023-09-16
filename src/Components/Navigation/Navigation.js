@@ -14,6 +14,7 @@ const NavigationBar = () => {
         </Link>
       </div>
       <nav className={navStyles.navLinkContainer}>
+        <Link className={navStyles.navLink} to="/"> Home </Link>
         <Link className={navStyles.navLink} to="/AboutUs"> About </Link>
         <Link className={navStyles.navLink} to="/Sponsorship"> Sponsorship </Link>
         <Link className={navStyles.navLink} to="/Schools"> School Programs </Link>
