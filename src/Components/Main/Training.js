@@ -1,15 +1,34 @@
 import React from "react";
+import trainingData from '../../Data/training.json';
 
-const Training = () => (
-  <div>
-    <h1 className="title is-1">Training Schedule</h1>
-    <p>
-      Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-      inceptos himenaeos. Vestibulum ante ipsum primis in faucibus orci luctus
-      et ultrices posuere cubilia curae; Duis consequat nulla ac ex consequat,
-      in efficitur arcu congue. Nam fermentum commodo egestas.
-    </p>
-  </div>
-);
+console.log(trainingData);
+
+const Training = () => {
+  return (
+    <div>
+      <h1>Training</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Time</th>
+            <th>Location</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {trainingData.training.map((training, index) => (
+            <tr key={index}>
+              <td>{training.day}</td>
+              <td>{training.time}</td>
+              <td>{training.location}</td>
+              <td>{training.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
 
 export default Training;
