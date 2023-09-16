@@ -1,5 +1,4 @@
-
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import joinStyles from './join.module.css'
 import formStyles from './form.module.css'
 
@@ -12,27 +11,61 @@ function Join() {
   const birthRef = useRef(null)
   const genderRef = useRef(null)
 
+  const [suburbError, setSuburbError] = useState(false)
+  const [nameError, setNameError] = useState(false)
+  const [emailError, setEmailError] = useState(false)
+
   const handleSubmit = (event) => {
     event.preventDefault()
+
+    // Validate the form fields
+    const firstName = firstNameRef.current.value
+    const lastName = lastNameRef.current.value
+    const email = emailRef.current.value
+    const suburb = suburbRef.current.value
+
+    if (!suburb) {
+      setSuburbError(true)
+    } else {
+      setSuburbError(false)
+    }
+
+    if (!firstName || !lastName) {
+      setNameError(true)
+    } else {
+      setNameError(false)
+    }
+
+    if (!email) {
+      setEmailError(true)
+    } else {
+      setEmailError(false)
+    }
+
+    // If there are errors, don't submit the form
+    if (suburbError || nameError || emailError) {
+      return
+    }
+
     const data = {
-      firstName: firstNameRef.current.value,
-      lastName: lastNameRef.current.value,
-      email: emailRef.current.value,
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
       state: stateRef.current.value,
-      suburb: suburbRef.current.value,
+      suburb: suburb,
       birthday: birthRef.current.value,
       gender: genderRef.current.value,
     }
-    alert("message info: \n" + JSON.stringify(data) + "the data 😎")
+    alert("Data being sent: \n" + JSON.stringify(data))
 
     // Clear the form fields
-    firstNameRef.current.value = "";
-    lastNameRef.current.value = "";
-    emailRef.current.value = "";
-    stateRef.current.value = "";
-    suburbRef.current.value = "";
-    birthRef.current.value = "";
-    genderRef.current.value = "";
+    firstNameRef.current.value = ""
+    lastNameRef.current.value = ""
+    emailRef.current.value = ""
+    stateRef.current.value = ""
+    suburbRef.current.value = ""
+    birthRef.current.value = ""
+    genderRef.current.value = ""
   }
 
   return (
@@ -42,43 +75,45 @@ function Join() {
         <form onSubmit={handleSubmit} className={joinStyles.form}>
 
           <div className={joinStyles.name}>
-            <label for="firstName" id="nameLabel">First Name</label>
+            <label htmlFor="firstName" id="nameLabel">First Name</label>
             <input
               type="text"
               id="firstName"
               name="firstName"
-              className={joinStyles.firstName}
+              className={`${joinStyles.firstName} ${nameError ? joinStyles.errorField : ''}`}
               ref={firstNameRef}
-              tabindex="1"
+              tabIndex="1"
             />
 
-            <label for="lastName">Last name</label>
+            <label htmlFor="lastName">Last name</label>
             <input
               type="text"
               id="lastName"
-              className={joinStyles.lastName}
+              className={`${joinStyles.lastName} ${nameError ? joinStyles.errorField : ''}`}
               ref={lastNameRef}
-              tabindex="2"
+              tabIndex="2"
             />
           </div>
 
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             name="email"
             id="email"
-            className={joinStyles.email}
+            className={`${joinStyles.email} ${emailError ? joinStyles.errorField : ''}`}
             placeholder="example@corp.com"
             ref={emailRef}
-            tabindex="3"
+            tabIndex="3"
           />
+          {emailError && <p className={joinStyles.error}>Email is required</p>}
 
-          <label for="state">Select your State:</label>
+          <label htmlFor="state">Select your State:</label>
           <select
             id="state"
             name="state"
             ref={stateRef}
-            className={joinStyles.list}>
+            className={joinStyles.list}
+          >
             <option value="vic">VIC</option>
             <option value="nsw">NSW</option>
             <option value="qld">QLD</option>
@@ -88,31 +123,30 @@ function Join() {
             <option value="tas">TAS</option>
           </select>
 
-          <label for="suburb">Suburb:<span className="required">*</span></label>
-          <input type="text" name="suburb" ref={suburbRef} className={joinStyles.suburb} />
+          <label htmlFor="suburb">Suburb:<span className="required">*</span></label>
+          <input type="text" name="suburb" ref={suburbRef} className={`${joinStyles.suburb} ${suburbError ? joinStyles.errorField : ''}`} />
+          {suburbError && <p className={joinStyles.error}>Suburb is required</p>}
 
-          <label for="birthday">Birthday:</label>
+          <label htmlFor="birthday">Birthday:</label>
           <input type="date" name="birthday" ref={birthRef} className={joinStyles.list} />
 
-          <label for="gender">Select your Gender:</label>
+          <label htmlFor="gender">Select your Gender:</label>
           <select id="gender" name="gender" ref={genderRef} className={joinStyles.list}>
             <option value="female">Female</option>
             <option value="male">Male</option>
             <option value="non-b">Non-Binary</option>
             <option value="other">Other</option>
           </select>
-
-          <button type="submit" className={joinStyles.send}>Send</button>
+          <div>
+            <button type="submit" className={joinStyles.send}>Send</button>
+          </div>
         </form>
       </div>
       <div className={formStyles.rightColumn}>
         <iframe className={joinStyles.clubStats} src="https://footystats.org/api/club?id=5" ></iframe>
       </div>
     </section>
-
-  )
+  );
 }
-
-
 
 export default Join;
